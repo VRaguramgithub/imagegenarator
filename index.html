@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Generator App</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Image Generator App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Image Generator</h1>
-  
-  <!-- Upload image -->
-  <input type="file" id="upload" accept="image/*" onchange="handleUpload(event)">
-  
-  <!-- Prompt box -->
-  <input type="text" id="prompt" placeholder="Type your style prompt...">
-  <button onclick="applyPrompt()">Apply Style</button>
-  
-  <!-- Output area -->
-  <div id="output"></div>
-  
-  <script src="script.js"></script>
+    <h1>Image Generator</h1>
+
+    <!-- Show cat image -->
+    <img src="cat.jpg" alt="Cat Image">
+
+    <!-- Upload image -->
+    <input type="file" id="upload" accept="image/*" onchange="handleUpload(event)">
+
+    <!-- Prompt box -->
+    <input type="text" id="prompt" placeholder="Enter prompt">
+    <button onclick="applyPrompt()">Apply Style</button>
+
+    <!-- Output area -->
+    <div id="output"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
